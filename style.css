@@ -73,8 +73,8 @@ body {
 }
 
 .logo {
-  font-size: 1.75rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 300;
   color: #4F2A7A;
   margin: 0 auto;
   margin-top: -7px;
@@ -96,7 +96,13 @@ body {
 
 
   letter-spacing: 1px;
-  transition: font-size 0.5s;
+  /* transition: font-size 0.5s; */
+}
+
+.logo-img {
+  width: 75vw;
+  max-width: 440px;
+  margin: 15px 10px auto;
 }
 
 text {
@@ -526,6 +532,10 @@ text {
     transition: font-size 1s;
   }
 
+  .logo-img {
+    width: 40vw;
+    margin: 15px 10px auto;
+  }
 
   .mobile-menu-button {
     display: none;
@@ -569,6 +579,11 @@ text {
 
 @media (min-width: 1024px) {
   /* lg breakpoint */
+  .logo-img {
+    width: 75vw;
+    max-width: 410px;
+    margin: 15px 10px auto;
+  }
   .service-card {
     flex: 1 1 calc(33.333% - 1.333rem); /* Three items per row with a gap */
   }
