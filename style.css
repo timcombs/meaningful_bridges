@@ -192,7 +192,7 @@ text {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
-  background-image: url('images/light-bridge.webp');
+  background-image: url('/images/light-bridge.webp');
   background-size: cover;
   background-position: center;
 
