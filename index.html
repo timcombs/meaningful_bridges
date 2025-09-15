@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meaningful Bridges Counseling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+
+    <!-- Header and Navigation -->
+    <header class="header">
+      <nav class="container nav-container">
+        <h1 class="logo">
+            <span>Meaningful</span>
+            <svg class="logo-curve" height="90" width="125" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <!-- M is first point, Q is the bezier point, then the end point -->
+                    <path id="lineAC" d="M 20 65 q 30, -65 100, 15" stroke="blue" stroke-width="2" fill="none"/>
+                </defs>
+                
+                <text textLength="120%">
+                    <textPath href="#lineAC" method="stretch" startOffset="-5">Bridges</textPath>
+                </text>
+            </svg>
+            <span class="logo-curve">Counseling</span>
+        </h1>
+
+        <!-- Desktop Navigation Tabs -->
+        <div id="desktop-nav" class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#fees">Fees/Services</a>
+          <a href="#connect">Connect</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-button">
+          <button id="hamburger-button" class="hamburger-button">
+            <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#fees">Fees/Services</a>
+        <a href="#connect">Connect</a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="section hero-section">
+        <!-- Hero Text -->
+        <div class="container hero-container">
+          <div class="hero-text">
+            <h1 class="hero-title">Connect to the Future You Want</h1>
+            <p class="hero-subtitle">
+              Providing compassionate, trauma-informed therapy for couples and individuals.
+            </p>
+            <a href="#connect" class="hero-button">
+              Connect With Me
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title">About My Practice</h2>
+          <div class="section-content">
+            <p>
+              I am a licensed therapist with over a decade of experience helping people navigate life's challenges. My approach is holistic and client-centered, focusing on creating a safe and supportive environment where you can explore your thoughts and feelings without judgment. I specialize in anxiety, depression, and relationship issues, using evidence-based practices to help you build resilience and achieve lasting change.
+            </p>
+            <p>Reconnect, Repair, Rediscover</p>
+            <p>
+              My goal is to empower you with the tools and insights you need to live a more fulfilling life. I believe that every individual has the capacity for growth and healing, and I am here to guide you on that path.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <section class="section background-img-two-section">
+        <!-- Hero Text -->
+        <div class="container hero-container">
+          <!-- <div class="hero-text">
+            <h1 class="hero-title">Your Journey to Wellness Starts Here</h1>
+            <p class="hero-subtitle">
+              Providing compassionate and professional mental health support for individuals and families.
+            </p>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Fees/Services Section -->
+      <section id="fees" class="section fees-section">
+        <div class="container">
+          <h2 class="section-title fees-title">Fees & Services</h2>
+
+          <div class="fees-grid">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+              <h3 class="service-title">Individual Therapy</h3>
+              <p class="service-description">50-minute session</p>
+              <span class="service-price">$150</span>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card">
+              <h3 class="service-title">Couples Counseling</h3>
+              <p class="service-description">50-minute session</p>
+              <span class="service-price">$175</span>
+            </div>
+            
+            <!-- Service Card 3 -->
+            <!-- <div class="service-card">
+              <h3 class="service-title">Group Sessions</h3>
+              <p class="service-description">90-minute session</p>
+              <span class="service-price">$75</span>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+            <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <!--- 2nd Background Image Section (like 1st Hero Section) -->
+      <section class="section background-img-two-section">
+        <!-- Hero Text -->
+        <div class="container hero-container">
+          <!-- <div class="hero-text">
+            <h1 class="hero-title">Your Journey to Wellness Starts Here</h1>
+            <p class="hero-subtitle">
+              Providing compassionate and professional mental health support for individuals and families.
+            </p>
+          </div>
+        </div> -->
+      </section>
+
+      <!-- Connect Section -->
+      <section id="connect" class="section connect-section">
+        <div class="container">
+          <h2 class="section-title">Contact & Location</h2>
+          <div class="connect-flex-container">
+            <!-- Contact Info -->
+            <div class="connect-info">
+              <p class="connect-lead-text">Ready to start your journey? Get in touch today to schedule your first appointment.</p>
+              <p><strong>Email:</strong> <a href="mailto:info@yourtherapist.com">info@yourtherapist.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:555-123-4567">(555) 123-4567</a></p>
+              <p><strong>Address:</strong> 123 Wellness Way, Suite 100, Anytown, USA 12345</p>
+            </div>
+            <!-- Contact Form Placeholder WILL BE A "BUTTON" that goes to a google form -->
+            <em>Note that although I use a HIPAA-compliant email service, confidentiality can’t be 100% guaranteed with this form of communication.</em>
+            <div class="contact-form-container">
+              <h3 class="form-title">Send Me a Message</h3>
+              <form class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message" rows="4"></textarea>
+                <button type="submit">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <p>&copy; 2024 Therapist Practice. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburgerButton = document.getElementById('hamburger-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburgerButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when a link is clicked
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+    </script>
+  </body>
+</html>
