@@ -277,7 +277,8 @@ div.section.dark {
   background-position: center;
 
   /* for the parallax */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -434,7 +435,8 @@ div.section.dark {
   background-position: center;
 
   /* for the parallax */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -470,7 +472,8 @@ div.section.dark {
   background-position: center;
 
   /* for the parallax */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
   background-repeat: no-repeat;
 }
 
@@ -515,32 +518,6 @@ div.section.dark {
   flex: 1 1 100%;
 }
 
-/* old code using grid */
-/* .fees-section {
-  background-color: #42688D;
-}
-
-.fees-title {
-  color: #FFE694;
-}
-
-.fees-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 60rem;
-  margin: 0 auto;
-}
-
-.service-card {
-  background-color: #FFE694;
-  padding: 2rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border: 1px solid #e2e8f0;
-  text-align: center;
-} */
-
 .service-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -556,29 +533,6 @@ div.section.dark {
   font-size: 1.875rem;
   font-weight: 700;
   color: #3182ce;
-}
-
-/* 2nd Background Image */
-.background-img-two-section {
-  color: #ffffff;
-
-  /* flex controls */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  /* positioning */
-  padding: 0;
-  min-height: 80vh; /* Set a minimum height for the section */
-  position: relative;
-  background-image: url('images/sunrise-bridge.webp');
-  background-size: cover;
-  background-position: center;
-
-  /* for the parallax */
-  background-attachment: fixed;
-  background-repeat: no-repeat;
 }
 
 /* Overlay for text readability */
@@ -736,12 +690,24 @@ div.section.dark {
     display: none;
   }
 
+  .hero-section {
+    background-attachment: fixed;
+  }
+  
   .hero-container {
     padding: 0 1.5rem;
   }
-
+  
   .hero-title {
     font-size: 3rem;
+  }
+  
+  .background-img-two-section {
+    background-attachment: fixed;
+  }
+
+  .background-img-three-section {
+    background-attachment: fixed;
   }
 
   .fees-flex-container {
