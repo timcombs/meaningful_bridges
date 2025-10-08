@@ -28,6 +28,26 @@ body {
   padding: 6rem 0;
 }
 
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #2c5282;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-content {
+  max-width: 85vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-content p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  padding: 0 1rem;
+}
+
 .hidden {
   display: none;
 }
@@ -255,8 +275,10 @@ div.section.dark {
 .page-title > div > h1 {
   font-size: 80px;
 }
+
 /* ***************************************************************** */
 /* ***** CURRENT PARALLAX CSS - does not work on iphone/iPad ******* */
+/* ***** work around to stop parallax ******* */
 /* ***************************************************************** */
 /* Hero Section */
 .hero-section {
@@ -328,27 +350,6 @@ div.section.dark {
 .hero-button:hover {
   background-color: #9850e9;
   transform: scale(1.05);
-}
-
-
-.section-title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #2c5282;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.section-content {
-  max-width: 85vw;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section-content p {
-  line-height: 1.75;
-  margin-bottom: 1rem;
-  padding: 0 1rem;
 }
 
 /* *************** ABOUT SECTION ********************************** */
@@ -549,7 +550,7 @@ div.section.dark {
 /* ******************* Policies Section ************************************* */
 /* ****************************** Policies Section ************************** */
 /* *************************************** Policies Section ***************** */
-.crisis-list {
+.no-bullet-list {
   list-style: none;
 }
 
@@ -565,14 +566,15 @@ div.section.dark {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  max-width: 56rem;
+  max-width: 90vw;
   margin: 0 auto;
   gap: 2rem;
+  /* outline: 2px solid red; */
 }
 
 .connect-info {
   text-align: center;
-  max-width: 50%;
+  max-width: 80%;
 }
 
 .connect-lead-text {
@@ -589,19 +591,28 @@ div.section.dark {
   color: #3182ce;
   text-decoration: underline;
 } */
-
-.contact-form-link {
+  
+.connect-form-link {
   color: white;
 }
 
+.location-info {
+  text-align: center;
+  max-width: 50%;
+}
 
-.connect-form-container {
+.location-info p {
+  color: #42688D;
+  margin-bottom: 0.5rem;
+}
+
+/* .connect-form-container {
   background-color: #f0f4f8;
   padding: 2rem;
   border-radius: 0.75rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   width: 100%;
-}
+} */
 
 .form-title {
   font-size: 1.5rem;
@@ -649,7 +660,17 @@ div.section.dark {
   background-color: #2c5282;
 }
 
-/* Footer */
+.bump {
+  padding-left: 1.35rem;
+}
+
+.bus-line-padding {
+  padding-right: 1rem;
+}
+
+/******* ************************** Footer ********************* *******/
+/******* ************* Footer ********************************** *******/
+/******* *************************************** Footer ******** *******/
 .footer {
   background-color: #2d3748;
   color: #ffffff;
@@ -661,9 +682,25 @@ div.section.dark {
   margin: 0;
 }
 
-/* --- ----------- Media Queries for Responsiveness ------------------- --- */
-/* --- ------------------- Media Queries for Responsiveness ----------- --- */
-/* --- ------------------- Media Queries for Responsiveness ----------- --- */
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.badges {
+  width: 30vw;
+  max-width: 200px;
+  height: auto;
+
+}
+
+
+
+/* --- ------- Media Queries for Responsiveness ----------------------- --- */
+/* --- ------------ Media Queries for Responsiveness ------------------ --- */
+/* --- ------------------------- Media Queries for Responsiveness ----- --- */
 /*  */
 @media (min-width: 768px) {
   /* md breakpoint */
@@ -740,6 +777,16 @@ div.section.dark {
 
   .contact-form-container {
     width: 50%;
+  }
+
+  .connect-flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90vw;
+    margin: 0 auto;
+    gap: 2rem;
   }
 }
 
