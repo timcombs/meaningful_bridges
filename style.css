@@ -21,6 +21,11 @@ body {
   padding: 0;
 }
 
+p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -29,7 +34,8 @@ body {
 
 .section {
   padding: 6rem 0;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .section-title {
@@ -365,6 +371,9 @@ div.section.dark {
   justify-content:space-around;
   align-items: center;
   width: 100%;
+  border-bottom: 4px solid #4F2A7A;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .normal-direction {
@@ -379,7 +388,8 @@ div.section.dark {
 }
 
 .about-larger {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 600;
   font-variant-caps: small-caps;
   letter-spacing: 0.05rem;
   line-height: 1.25 !important;
@@ -400,7 +410,7 @@ div.section.dark {
 .about-figure-caption p {
   line-height: 1rem;
   font-size: 0.75rem;
-  margin: 0.5rem 0;
+  margin: 0.25rem 0 0.75rem 0;
 }
 
 .big-name {
@@ -442,7 +452,7 @@ div.section.dark {
 }
 
 /* Overlay for text readability */
-.background-img-two::before {
+.background-img-two-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -468,6 +478,43 @@ div.section.dark {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
+  background-image: url('images/clouds-mirror-bridge.webp');
+  background-size: cover;
+  background-position: center;
+
+  /* for the parallax */
+  /* background-attachment: fixed; */
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+}
+
+/* Overlay for text readability */
+.background-img-three-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for desired effect */
+}
+
+/* ************ 4th Background Image ************************************* */
+/* ******************************** 4th Background Image ***************** */
+/* ********************* 4th Background Image **************************** */
+.background-img-four-section {
+  color: #ffffff;
+
+  /* flex controls */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  /* positioning */
+  padding: 0;
+  min-height: 80vh; /* Set a minimum height for the section */
+  position: relative;
   background-image: url('images/another-bridge.webp');
   background-size: cover;
   background-position: center;
@@ -479,7 +526,7 @@ div.section.dark {
 }
 
 /* Overlay for text readability */
-.background-img-three::before {
+.background-img-four-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -675,6 +722,10 @@ div.section.dark {
   }
 
   .background-img-three-section {
+    background-attachment: fixed;
+  }
+
+  .background-img-four-section {
     background-attachment: fixed;
   }
 
