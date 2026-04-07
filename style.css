@@ -594,6 +594,10 @@ div.section.dark {
   background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity for desired effect */
 }
 
+.insurance-list {
+  padding: 0;
+}
+
 /* ******************* Policies Section ************************************* */
 /* ****************************** Policies Section ************************** */
 /* *************************************** Policies Section ***************** */
