@@ -316,7 +316,7 @@ div.section.dark {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
-  background-image: url('images/light-bridge.webp');
+  background-image: url('images/light-bridge-small.webp');
   background-size: cover;
   background-position: center;
 
@@ -414,6 +414,8 @@ div.section.dark {
 .about-figure {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .about-figure-caption {
@@ -421,6 +423,7 @@ div.section.dark {
   color: #FFF2B9;
   font-style: italic;
   text-align: center;
+  width: fit-content;
 }
 
 .about-figure-caption p {
@@ -457,7 +460,7 @@ div.section.dark {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
-  background-image: url('images/sunrise-bridge.webp');
+  background-image: url('images/sunrise-bridge-small.webp');
   background-size: cover;
   background-position: center;
 
@@ -494,7 +497,7 @@ div.section.dark {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
-  background-image: url('images/clouds-mirror-bridge.webp');
+  background-image: url('images/clouds-mirror-bridge-small.webp');
   background-size: cover;
   background-position: center;
 
@@ -531,7 +534,7 @@ div.section.dark {
   padding: 0;
   min-height: 80vh; /* Set a minimum height for the section */
   position: relative;
-  background-image: url('images/another-bridge.webp');
+  background-image: url('images/another-bridge-small.webp');
   background-size: cover;
   background-position: center;
 
@@ -725,10 +728,6 @@ div.section.dark {
     display: none;
   }
 
-  .hero-section {
-    background-attachment: fixed;
-  }
-  
   .hero-container {
     padding: 0 1.5rem;
   }
@@ -737,15 +736,24 @@ div.section.dark {
     font-size: 3rem;
   }
   
+  /* BACKGROUND IMAGES (768px up to 1024px) */
+  .hero-section {
+    background-image: url('images/light-bridge-medium.webp');
+    background-attachment: fixed;
+  }
+
   .background-img-two-section {
+    background-image: url('images/sunrise-bridge-medium.webp');
     background-attachment: fixed;
   }
 
   .background-img-three-section {
+    background-image: url('images/clouds-mirror-bridge-medium.webp');
     background-attachment: fixed;
   }
 
   .background-img-four-section {
+    background-image: url('images/another-bridge-medium.webp');
     background-attachment: fixed;
   }
 
@@ -753,6 +761,10 @@ div.section.dark {
     flex-direction: row;
   }
 
+  .about-figure {
+    width: unset;
+  }
+  
   .about-image {
     width: 100%;
     max-width: 458px;
@@ -799,6 +811,23 @@ div.section.dark {
     margin: 15px 10px auto;
   }
 
+  /* BACKGROUND IMAGES (1024px and up) */
+  .hero-section {
+    background-image: url('images/light-bridge-large.webp');
+  }
+
+  .background-img-two-section {
+    background-image: url('images/sunrise-bridge-large.webp');
+  }
+
+  .background-img-two-section {
+    background-image: url('images/clouds-mirror-bridge-large.webp');
+  }
+
+  .background-img-two-section {
+    background-image: url('images/another-bridge-large.webp');
+  }
+  
   .about-flex-container {
     flex-direction: row;
     /* justify-content:space-around; */
@@ -808,6 +837,10 @@ div.section.dark {
   .about-text {
     width: 50%;
     /* justify-content: center; */
+  }
+
+  .about-figure {
+    width: unset;
   }
 
   /* .about-image {
