@@ -7,7 +7,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>Meaningful Bridges Counseling | Tim Combs, Counselor Associate | Portland, OR</title>
     <meta name="description" content="Trauma-informed individual therapy and couples counseling in Portland, OR. Specializing in existential-narrative-gestalt therapy, depth psychology, neurodivergence, and addictions recovery.">
-    <meta name="keywords" content="Therapist Portland OR, Individual Counseling, Couples Counseling Portland, Trauma-informed Therapy, Existential Therapy, Gestalt Therapy, Shadow Work, Tim Combs Counseling, Addictions Recovery Portland, walk and talk therapy, emotionally focused therapy, Narrative Therapy, ADHD, Telehealth, In Person, Coherence Therapy, Creative Expressive modalities">
+    <meta name="keywords" content="Therapist Portland OR, Individual Counseling, Couples Counseling Portland, Trauma-informed Therapy, Existential Therapy, Gestalt Therapy, Shadow Work, Tim Combs Counseling, Addictions Recovery, Portland, walk and talk therapy, emotionally focused therapy, Narrative Therapy, ADHD, Telehealth, In Person, Coherence Therapy, Creative Expressive modalities">
     <meta name="author" content="Tim Combs, MA, NCC">
     <link rel="canonical" href="https://meaningfulbridges.com/">
 
@@ -17,13 +17,8 @@
     <meta property="og:title" content="Meaningful Bridges Counseling | Portland, OR">
     <meta property="og:description" content="Trauma-informed individual therapy and couples counseling using an existential-narrative-gestalt lens. Schedule a free 15-minute consultation.">
     <meta property="og:image" content="https://meaningfulbridges.com/images/chair.webp">
-
-    <!-- Twitter / X -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://meaningfulbridges.com/">
-    <meta property="twitter:title" content="Meaningful Bridges Counseling | Portland, OR">
-    <meta property="twitter:description" content="Trauma-informed individual therapy and couples counseling using an existential-narrative-gestalt lens.">
-    <meta property="twitter:image" content="https://meaningfulbridges.com/images/chair.webp">
+    <meta property="og:site_name" content="Meaningful Bridges Counseling">
+    <meta property="og:see_also" content="https://www.instagram.com/meaningfulbridges/">
 
     <!-- Fonts and Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,6 +66,21 @@
             { "@type": "InsuranceProduct", "name": "Regence of Oregon" },
             { "@type": "InsuranceProduct", "name": "UBH/UHC/Optum" }
           ],
+          "potentialAction": {
+            "@type": "ReserveAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://docs.google.com/forms/d/e/1FAIpQLSesW0LIcY1Sq9SgOdI7k3HQJ3RLGuSKpMit-daDB0vgtbAnIA/viewform?usp=sharing&ouid=109663653586717540426",
+              "actionPlatform": [
+                "http://schema.org/DesktopWebPlatform",
+                "http://schema.org/MobileWebPlatform"
+              ]
+            },
+            "result": {
+              "@type": "MedicalAppointment",
+              "name": "Free 15-Minute Consultation Call"
+            }
+          },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Mental Health Services",
@@ -132,25 +142,31 @@
     }
     </script>
   </head>
+
   <body>
-    
+    <!-- Accessibility: Skip Navigation Link for Keyboard Only Users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <!-- ------------ Header and Navigation ------------------------------ -->
     <header class="header">
-      <nav class="container nav-container" aria-label="Main Navigation">
+      <nav class="container nav-container" aria-label="Main Navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <span class="logo">
           <picture>
             <img class="logo-img" 
-                 src="images/logo.webp" 
+                 src="images/logo.png" 
+                 loading="eager"
+                 width="300" 
+                 height="95" 
                  alt="Meaningful Bridges Counseling logo" />
           </picture>
         </span>
 
-        <!-- Desktop Navigation Tabs -->
+        <!-- Desktop Navigation Tabs with Microdata targeting -->
         <div id="desktop-nav" class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#fees">Fees/Services</a>
-          <a href="#connect">Connect</a>
+          <a itemprop="url" href="#home"><span itemprop="name">Home</span></a>
+          <a itemprop="url" href="#about"><span itemprop="name">About</span></a>
+          <a itemprop="url" href="#fees"><span itemprop="name">Fees/Services</span></a>
+          <a itemprop="url" href="#connect"><span itemprop="name">Connect</span></a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -163,8 +179,8 @@
         </div>
       </nav>
 
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobile-menu" class="mobile-menu hidden">
+      <!-- Mobile Dropdown Menu with full state flags -->
+      <div id="mobile-menu" class="mobile-menu hidden" aria-hidden="true" aria-label="Mobile Navigation">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#fees">Fees/Services</a>
@@ -172,10 +188,10 @@
       </div>
     </header>
 
-    <main class="main-content">
+    <main id="main-content" class="main-content">
       
       <!-- Hero Section -->
-      <section id="home" class="section hero-section" itemscope itemtype="https://schema.org/MedicalBusiness">
+      <section id="home" class="section hero-section" aria-label="Introduction" itemscope itemtype="https://schema.org/MedicalBusiness" itemid="https://meaningfulbridges.com/#practice">
         <meta itemprop="name" content="Meaningful Bridges Counseling LLC">
         <div class="container hero-container">
           <div class="hero-text">
@@ -191,9 +207,9 @@
       </section>
       
       <!-- ------------------- ABOUT Section -------------------------->
-      <section id="about" class="section about-section" itemscope itemtype="https://schema.org/LocalBusiness">
+      <section id="about" class="section about-section" aria-labelledby="about-heading" itemscope itemtype="https://schema.org/LocalBusiness" itemid="https://meaningfulbridges.com/#practice">
         <div class="container">
-          <h2 class="section-title">About My Practice</h2>
+          <h2 id="about-heading" class="section-title">About My Practice</h2>
           <div class="section-content">
             <div class="about-flex-container">
               <article class="about-text">
@@ -208,7 +224,7 @@
                 </p>
               </article>
               
-              <figure class="about-figure" itemprop="employee" itemscope itemtype="https://schema.org/Person">
+              <figure class="about-figure" itemprop="employee" itemscope itemtype="https://schema.org/Person" itemid="https://meaningfulbridges.com/#therapist">
                 <figcaption class="about-figure-caption">
                   <picture>
                     <img class="about-image" 
@@ -332,14 +348,14 @@
       </section>
 
       <!--- 2nd Background Image Section (Bridge ID Assigned) -->
-      <section id="approach-bridge" class="section background-img-two-section">
+      <section id="approach-bridge" class="section background-img-two-section" aria-hidden="true">
         <div class="container hero-container"></div>
       </section>
 
       <!-- Fees/Services Section -->
-      <section id="fees" class="section fees-section" itemscope itemtype="https://schema.org/PriceSpecification">
+      <section id="fees" class="section fees-section" aria-labelledby="fees-heading" itemscope itemtype="https://schema.org/PriceSpecification">
         <div class="container">
-          <h2 class="section-title fees-title">Fees & Services</h2>
+          <h2 id="fees-heading" class="section-title fees-title">Fees & Services</h2>
 
           <div class="fees-flex-container">
             <!-- Service Card 1 -->
@@ -370,7 +386,7 @@
             <article class="service-card">
               <h3 class="service-title">Insurance Pay - Individual Therapy</h3>
               <p class="service-description">50-minute session</p>
-              <span class="service-price">$175</span>
+              <span class="service-price" itemprop="price" content="175.00">$175</span>
               <p class="service-description">Intake session</p>
               <span class="service-price">$200</span>
             </article>
@@ -379,7 +395,7 @@
             <article class="service-card">
               <h3 class="service-title">Insurance Pay - Couples Counseling</h3>
               <p class="service-description">50-minute session</p>
-              <span class="service-price">$175</span>
+              <span class="service-price" itemprop="price" content="175.00">$175</span><meta itemprop="priceCurrency" content="USD">
               <p class="service-description">Intake session</p>
               <span class="service-price">$200</span>
             </article>
@@ -388,7 +404,7 @@
             <article class="service-card">
               <h3 class="service-title">CASH Pay - Individual Therapy</h3>
               <p class="service-description">50-minute session</p>
-              <span class="service-price">$150</span>
+              <span class="service-price" itemprop="price" content="150.00">$150</span><meta itemprop="priceCurrency" content="USD">
               <p class="service-description">Intake session</p>
               <span class="service-price">$150</span>
             </article>
@@ -397,7 +413,7 @@
             <article class="service-card">
               <h3 class="service-title">CASH Pay - Couples Counseling</h3>
               <p class="service-description">50-minute session</p>
-              <span class="service-price">$175</span>
+              <span class="service-price" itemprop="price" content="175.00">$175</span><meta itemprop="priceCurrency" content="USD">
               <p class="service-description">Intake session</p>
               <span class="service-price">$175</span>
             </article>
@@ -470,7 +486,7 @@
       </section>
 
       <!--- 3rd Background Image Section (Bridge ID Assigned) -->
-      <section id="accessibility-bridge" class="section background-img-three-section">
+      <section id="accessibility-bridge" class="section background-img-three-section" aria-hidden="true">
         <div class="container hero-container"></div>
       </section>
 
@@ -516,13 +532,13 @@
       </section>
 
       <!--- 4th Background Image Section (Bridge ID Assigned) -->
-      <section id="curriculum-bridge" class="section background-img-four-section">
+      <section id="curriculum-bridge" class="section background-img-four-section" aria-hidden="true">
         <div class="container hero-container"></div>
       </section>
 
       <!-- ----------------------------- CONNECT Section --------- -->
-      <section id="connect" class="section connect-section container" itemscope itemtype="https://schema.org/MedicalBusiness">
-        <h2 class="section-title">Connect & Location</h2>
+      <section id="connect" class="section connect-section container" aria-labelledby="connect-heading" itemscope itemtype="https://schema.org/MedicalBusiness" itemid="https://meaningfulbridges.com/#practice">
+        <h2 id="connect-heading" class="section-title">Connect & Location</h2>
 
         <div class="connect-flex-container section-content">
           <!-- Contact Info -->
@@ -581,10 +597,13 @@
       </div>
 
       <div class="badge-container">
-        <a href="https://portlandtherapycenter.com/" title="Portland Therapy Center Member" rel="noopener">
+        <a href="https://www.portlandtherapycenter.com/therapists/tim-combs/" title="Portland Therapy Center Member" rel="noopener">
           <img class="badges" 
-          src="https://www.portlandtherapycenter.com/lib/img/therapist_badge_sm.png" 
-          alt="Portland Therapy Center Member" width="200" /></a>
+          src="images/therapist_badge_sm.webp" 
+          loading="lazy"
+          width="160"
+          height="50"
+          alt="Portland Therapy Center Member badge"/></a>
         <a href="https://www.psychologytoday.com/profile/1444905" class="sx-verified-seal" rel="noopener">
           <picture>
             <img class="badges" 
